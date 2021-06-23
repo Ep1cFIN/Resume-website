@@ -1,0 +1,103 @@
+:root{
+    --cool-gray:#D7D7D9;
+    --dark-green:#197340;
+    --light-green:#30BF6E;
+    --teal:#29A65F;
+    --black:#0D0D0D;
+    --bg:#1D1E20;
+}
+
+body{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: var(--bg);
+}
+
+p{
+    text-align: left;
+}
+
+figure{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+
+}
+
+img{
+    object-fit: cover;
+    width: inherit;
+}
+
+header{
+    position: absolute;
+}
+
+h1{
+    padding-top: 73vh;
+    text-align: center;
+    font: normal normal 800 42px/52px Montserrat;
+    letter-spacing: 0px;
+    color: var(--cool-gray);
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal bold 32px/39px Montserrat;
+    letter-spacing: 0px;
+    color: var(--cool-gray);
+    opacity: 1;
+}
+
+h3{
+    font-family: Helvetica, sans-serif;
+}
+
+h4{
+    inherits: h3;
+}
+
+p{
+    font-family: Helvetica, sans-serif;
+}
+
+.card{
+    width: 90vw;
+    display: grid;
+    
+}
+
+
+.socialMedia{
+    width: 15vw;
+}
+
+.flex{
+    display: flex;
+}
+.alignBottom{
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+#profile{
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: transparent url("pictures/ylioppilaskuva.png") 0% 0% no-repeat padding-box;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
