@@ -57,14 +57,16 @@ h2{
 
 h3{
     text-align: left;
-font: normal normal bold 32px/39px Montserrat;
-letter-spacing: 0px;
-color: var(--teal);
-opacity: 1;
+    font: normal normal bold 32px/39px Montserrat;
+    letter-spacing: 0px;
+    color: var(--teal);
+    opacity: 1;
+    margin: 1%;
 }
 
 h4{
     font-family: Helvetica, sans-serif;
+    margin: 1%;
     color: var(--text);
 }
 
@@ -85,7 +87,31 @@ p{
     margin: 5vw;
     border-radius: 10px;
     align-items: flex-start;
+    align-content: flex-start;
 }
+
+.card ul{
+    list-style: none;
+    color: var(--text);
+}
+
+.card li::before{
+    content: "+";
+    color: var(--teal);
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.card hr{
+    color: var(--dark-green);
+    border-color: var(--dark-green);
+    width: 55%;
+    border-radius: 0;
+    margin-left: -5%;
+    
+}
+
+
 
 
 .socialMedia{
