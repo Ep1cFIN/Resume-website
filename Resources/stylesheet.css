@@ -65,9 +65,28 @@ h3{
 }
 
 h4{
-    font-family: Helvetica, sans-serif;
+    text-align: left;
+    font: normal normal bold 20px/27px Noto Sans;
+    letter-spacing: 0px;
+    color: var(--light-green);
+    opacity: 1;
     margin: 1%;
+}
+
+h5{
+    font-family: Helvetica, sans-serif;
+    margin: 0%;
     color: var(--text);
+    font-size: 18px;
+}
+
+h6{
+    text-align: left;
+text-decoration: underline;
+font: normal normal bold 14px/19px Noto Sans;
+letter-spacing: 0px;
+color: var(--text);
+opacity: 1;
 }
 
 p{
@@ -75,6 +94,10 @@ p{
     font-family: Helvetica, sans-serif;
     color: var(--text);
     font-size: 16px;
+}
+
+.tab{
+    margin-left: 5%;
 }
 
 
@@ -93,6 +116,16 @@ p{
 .card ul{
     list-style: none;
     color: var(--text);
+    text-align: left;
+}
+
+.card li {
+    padding-bottom: 2rem;
+    text-align: left;
+    font: normal normal normal 18px Noto Sans;
+    letter-spacing: 0px;
+    opacity: 1;
+
 }
 
 .card li::before{
