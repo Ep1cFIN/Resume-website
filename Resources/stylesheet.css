@@ -8,6 +8,62 @@
     --bg:#1D1E20;
 }
 
+@media screen and (min-width: 786px){
+    .pc{
+        display: flex;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .pc article{
+        
+        height: 100vh;
+        margin-bottom: 10%;
+        
+    }
+
+    .pc h1{
+        margin: 5% 0 2.5% 0;
+        padding: 0;
+        font-size: 74px;
+        line-height: 108px;
+    }
+
+    #pc-profile{
+        width: 60vw;
+        background-color: var(--black);
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+}
+
+header{
+    position: fixed;
+    height: 100vh;
+    color: var(--black);
+    width: 10vw;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--black);
+    height: 100%;
+}
+
 body{
     flex-direction: column;
     margin: 0;
@@ -20,15 +76,12 @@ body{
 figure{
     display: flex;
     justify-content: space-evenly;
+    max-height: 75%;
 }
 
 
 img{
     max-width: 100%;
-}
-
-header{
-    position: absolute;
 }
 
 h1{
@@ -113,6 +166,15 @@ table{
     margin-left: 5%;
 }
 
+.navitem{
+    margin-top: 5vh;
+    fill: var(--teal);
+}
+
+.button{
+    width: 10vw;
+    height: 10vw;
+}
 
 .card{
     max-width: 90vw;
@@ -162,7 +224,7 @@ table{
 
 
 .socialMedia{
-    width: 15vw;
+    margin: 5%;
 }
 
 .flex{
@@ -196,7 +258,7 @@ table{
 }
 
 
-#profile{
+.profile{
     top: 0px;
     left: 0px;
     width: 100vw;
@@ -207,4 +269,8 @@ table{
     opacity: 1;
     position: relative;
     overflow: hidden;
+}
+
+#topleft{
+    background: transparent linear-gradient(135deg, #40976A 0%, #53B783 100%) 0% 0% no-repeat padding-box;
 }

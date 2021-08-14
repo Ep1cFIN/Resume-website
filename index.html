@@ -21,15 +21,19 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-      <div class="button">
+      <div class="button" id="topleft">
         
       </div>
       <nav>
-
+        
+        <a class="button navitem" href="#profile"><img src="Resources/graphics/Icons/myProfile.svg" alt=""></a>
+        <a class="button navitem" href="#work-experience"><img src="Resources/graphics/Icons/workExperience.svg" alt=""></a>
+        <a class="button navitem" href="#skills"><img src="Resources/graphics/Icons/education.svg" alt=""></a>
+        
       </nav>
     </header>
     <!-- profile / landing area -->
-    <section class="alignBottom flex" id="profile">
+    <section class="alignBottom mobile profile" >
       <h1>Roope Ripatti</h1>
       <figure class="flex">
         <a class="socialMedia" href="tel:+358406840199"><img src="Resources/graphics/SocialMedia/phone.svg" alt="Call my number"></a>
@@ -37,9 +41,29 @@
         <a class="socialMedia" href=""><img src="Resources/graphics/SocialMedia/linkedin.svg" alt="My LinkedIN"></a>
       </figure>
     </section>
-    <hr>
+
+    <section class="pc" id="profile">
+      <article id="pc-profile">
+        <h1>Roope Pipatti</h1>
+        <figure>
+          <a class="socialMedia" href="tel:+358406840199">
+            <img src="Resources/graphics/SocialMedia/phone.svg" alt="Call my number">
+            <p>+358 40 684 0199</p>
+          </a>
+          <a class="socialMedia" href="mailto:roope.ripatti@gmail.com">
+            <img src="Resources/graphics/SocialMedia/email.svg" alt="Mail me @">
+            <p>roope.ripatti@gmail.com</p>
+          </a>
+          <a class="socialMedia" href="">
+            <img src="Resources/graphics/SocialMedia/linkedin.svg" alt="My LinkedIN">
+            <p>Roope Ripatti</p>
+          </a>
+        </figure>
+      </article>
+      
+    </section>
     <!-- work experience  -->
-    <section>
+    <section id="work-experience">
       <h2>Work Experience</h2>
       <!-- hesburger work experience card -->
       <article class="card flex">
@@ -66,7 +90,7 @@
     </section>
     <hr>
     <!-- skills and education section -->
-    <section >
+    <section id="skills">
       <h2>Skills and Education</h2>
       <!-- education card -->
       <article class="card flex">
