@@ -57,7 +57,7 @@ header{
 }
 
 nav{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     background-color: var(--black);
@@ -271,6 +271,13 @@ table{
     overflow: hidden;
 }
 
-#topleft{
+#topLeft{
     background: transparent linear-gradient(135deg, #40976A 0%, #53B783 100%) 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+#topLeft img{
+    width: 50%;
+    height: 50%;
+    margin: 25%;
 }
